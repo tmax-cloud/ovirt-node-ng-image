@@ -34,16 +34,16 @@ IMAGENAME="ovirt-node-ng-image"
 AC_SUBST([IMAGENAME])
 
 AC_ARG_WITH([distro],
-    [AS_HELP_STRING([--with-distro=distro], [Base node-ng on distro (default: centos8stream)])],
+    [AS_HELP_STRING([--with-distro=distro], [Base node-ng on distro (default: prolinux)])],
     [DISTRO="$withval"],
-    [DISTRO="centos8stream"])
+    [DISTRO="prolinux"])
 AC_SUBST([DISTRO])
 
 AC_ARG_WITH([bootisourl],
     [AS_HELP_STRING([--with-bootisourl=URL],
-        [boot ISO url (default: http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/images/boot.iso)])],
+        [boot ISO url (default: http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/images/boot.iso)])],
     [BOOTISOURL="$withval"],
-    [BOOTISOURL="http://mirror.centos.org/centos/8-stream/BaseOS/x86_64/os/images/boot.iso"])
+    [BOOTISOURL="http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/images/boot.iso"])
 AC_SUBST([BOOTISOURL])
 
 AC_ARG_WITH([bootiso],

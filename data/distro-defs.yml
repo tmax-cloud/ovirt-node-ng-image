@@ -1,16 +1,14 @@
 ---
-centos8stream:
-  url: --mirrorlist=http://mirrorlist.centos.org/?repo=BaseOS&release=8-stream&arch=$basearch
+prolinux:
+  url: --baseurl=http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/BaseOS
   repos:
-    appstream: --mirrorlist=http://mirrorlist.centos.org/?repo=AppStream&release=8-stream&arch=$basearch
-    powertools: --mirrorlist=http://mirrorlist.centos.org/?repo=PowerTools&release=8-stream&arch=$basearch
-    extras: --mirrorlist=http://mirrorlist.centos.org/?repo=Extras&release=8-stream&arch=$basearch
+    appstream: --baseurl=http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/AppStream
+    powertools: --baseurl=https://vault.centos.org/8.2.2004/PowerTools/x86_64/os/
+    extras: --baseurl=https://vault.centos.org/8.2.2004/extras/x86_64/os/
   packages-switch: --excludeWeakdeps
   packages:
     - dracut-live
     - python36
-    - centos-stream-repos
-    - scap-security-guide  # needed for post action
   post:
     - |
         ver=$(rpm -qf /etc/yum.repos.d/ovirt* | grep ^ovirt-release | sort -u | sed 's/ovirt-release//' | cut -b1)

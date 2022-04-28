@@ -14,8 +14,8 @@ APPLIANCE_DOMAIN="appliance.net"
 LIBVIRT_NETWORK="ovirt-node-net"
 LIBVIRT_IP_OCTET="155"
 
-CENTOS_MIRROR="${CENTOS_MIRROR:-http://mirror.centos.org}"
-CENTOS_INSTALLATION_SOURCE="${CENTOS_MIRROR}/centos/8-stream/BaseOS/x86_64/os/"
+#CENTOS_MIRROR="${CENTOS_MIRROR:-http://mirror.centos.org}"
+PL_INSTALLATION_SOURCE="http://prolinux-repo.tmaxos.com/prolinux/8.2/os"
 RELEASE_RPM=
 
 ####################
@@ -416,7 +416,7 @@ setup_node() {
         --memory $MAX_VM_MEM \
         --vcpus $MAX_VM_CPUS \
         --cpu host \
-        --location "${CENTOS_INSTALLATION_SOURCE}" \
+        --location "${PL_INSTALLATION_SOURCE}" \
         --extra-args "inst.ks=file:///node-install.ks console=ttyS0 inst.sshd=1" \
         --initrd-inject $ksfile \
         --check disk_size=off,path_in_use=off \
