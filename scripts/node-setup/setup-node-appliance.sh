@@ -15,7 +15,7 @@ LIBVIRT_NETWORK="ovirt-node-net"
 LIBVIRT_IP_OCTET="155"
 
 #CENTOS_MIRROR="${CENTOS_MIRROR:-http://mirror.centos.org}"
-PL_INSTALLATION_SOURCE="http://prolinux-repo.tmaxos.com/prolinux/8.2/os"
+PL_INSTALLATION_SOURCE="http://prolinux-repo.tmaxos.com/prolinux/.8.2/os"
 RELEASE_RPM=
 
 ####################

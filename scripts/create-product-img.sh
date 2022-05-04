@@ -44,7 +44,7 @@ cat > "$PRDDIR/.buildstamp" <<EOF
 [Main]
 Product=oVirt Node Next
 Version=${VERSION}
-BugURL=https://bugzilla.redhat.com
+BugURL=https://technet.tmaxsoft.com/
 IsFinal=${ISFINAL}
 UUID=$(date +%Y%m%d).x86_64
 [Compose]

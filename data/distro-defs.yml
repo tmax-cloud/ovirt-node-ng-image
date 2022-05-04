@@ -1,10 +1,13 @@
 ---
 prolinux:
-  url: --baseurl=http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/BaseOS
+  url: --url=http://prolinux-repo.tmaxos.com/prolinux/.8.2/os/x86_64/
   repos:
+    baseos: --baseurl=http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/BaseOS
     appstream: --baseurl=http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/AppStream
     powertools: --baseurl=https://vault.centos.org/8.2.2004/PowerTools/x86_64/os/
     extras: --baseurl=https://vault.centos.org/8.2.2004/extras/x86_64/os/
+    no-upgrade: --baseurl=http://192.168.2.136/temp/eslee/ovirt-ng-4.4.9
+    updates: --baseurl=http://192.168.2.136/prolinux/ovirt/4.4/el8/updates/
   packages-switch: --excludeWeakdeps
   packages:
     - dracut-live
