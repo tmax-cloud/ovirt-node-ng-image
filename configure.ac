@@ -41,9 +41,9 @@ AC_SUBST([DISTRO])
 
 AC_ARG_WITH([bootisourl],
     [AS_HELP_STRING([--with-bootisourl=URL],
-        [boot ISO url (default: http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/images/boot.iso)])],
+        [boot ISO url (default: http://prolinux-repo.tmaxos.com/prolinux/.8.2/os/x86_64/images/boot.iso)])],
     [BOOTISOURL="$withval"],
-    [BOOTISOURL="http://prolinux-repo.tmaxos.com/prolinux/8.2/os/x86_64/images/boot.iso"])
+    [BOOTISOURL="http://prolinux-repo.tmaxos.com/prolinux/.8.2/os/x86_64/images/boot.iso"])
 AC_SUBST([BOOTISOURL])
 
 AC_ARG_WITH([bootiso],
@@ -62,9 +62,9 @@ AC_SUBST([TMPDIR])
 
 AC_ARG_WITH([ovirt-release-rpm-url],
     [AS_HELP_STRING([--with-ovirt-release-rpm-url=URL],
-        [URL to the ovirt-release rpm (default: http://resources.ovirt.org/pub/yum-repo/ovirt-release44.rpm)])],
+        [URL to the ovirt-release rpm (default: http://192.168.2.136/temp/eslee/ovirt-ng-4.4.9/Packages/ovirt-release44-4.4.9.3-1.0.3.el8.noarch.rpm)])],
     [OVIRTRELEASERPMURL="$withval"],
-    [OVIRTRELEASERPMURL="http://resources.ovirt.org/pub/yum-repo/ovirt-release44.rpm"])
+    [OVIRTRELEASERPMURL="http://192.168.2.136/temp/eslee/ovirt-ng-4.4.9/Packages/ovirt-release44-4.4.9.3-1.0.3.el8.noarch.rpm"])
 AC_SUBST([OVIRTRELEASERPMURL])
 
 AC_CONFIG_FILES([
