@@ -62,9 +62,9 @@ AC_SUBST([TMPDIR])
 
 AC_ARG_WITH([ovirt-release-rpm-url],
     [AS_HELP_STRING([--with-ovirt-release-rpm-url=URL],
-        [URL to the ovirt-release rpm (default: http://192.168.9.187/gwkang/pub/HyperVM-22/rpm/pl8/ovirt/ovirt-release44-4.4.9.3-1.0.2.el8.noarch.rpm)])],
+        [URL to the ovirt-release rpm (default: http://hypervm-repo.tmaxcloud.com/pub/HyperVM-22/rpm/pl8/ovirt-release44-4.4.9.3-1.0.2.el8.noarch.rpm)])],
     [OVIRTRELEASERPMURL="$withval"],
-    [OVIRTRELEASERPMURL="http://192.168.9.187/gwkang/pub/HyperVM-22/rpm/pl8/ovirt/ovirt-release44-4.4.9.3-1.0.2.el8.noarch.rpm"])
+    [OVIRTRELEASERPMURL="http://hypervm-repo.tmaxcloud.com/pub/HyperVM-22/rpm/pl8/ovirt-release44-4.4.9.3-1.0.2.el8.noarch.rpm"])
 AC_SUBST([OVIRTRELEASERPMURL])
 
 AC_CONFIG_FILES([
